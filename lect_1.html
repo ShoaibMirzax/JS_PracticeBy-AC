@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- To load later js -->
+    <!-- <script defer src="script.js"></script>  -->
+    <!-- To load with DOM  -->
+    <!-- <script async src="script.js"></script>  -->
+    <style>
+        .btn{
+            background-color: rgba(140, 204, 21, 0.829);
+            color: white;
+            border: 2px solid firebrick;
+            border-radius: 15px;
+            height: 5rem;
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button class="btn">Click Me</button> -->
+    <button class="btn">Roll No: Shoaib</button>
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        // let bn = document.querySelector("button")
+// bn.addEventListener('click', fun)
+
+// function fun(){
+//     alert("How are you")
+// }
+let bn = document.querySelector("button")
+bn.addEventListener('click', show)
+
+function show(){
+    let name = prompt("Enter your name ");
+    bn.textContent = "Roll No: " + name ;
+}
+// script loading 
+    </script>
+</body>
+</html>
